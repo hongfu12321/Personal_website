@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 import Navigation from "../components/Template/Navigation";
+import SideBar from "../components/Template/SideBar";
 
 const Main = (props) => (
     <HelmetProvider>
@@ -16,7 +17,7 @@ const Main = (props) => (
             <div id="main">
                 {props.children}
             </div>
-            {/* {props.fullPage ? null : <SideBer />} */}
+            {props.fullPage ? null : <SideBar />}
         </div>
     </HelmetProvider>
 )
